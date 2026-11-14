@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consomé para el Alma — Omar Cruz Padilla | Cuentos, Escuelas Bíblicas, Libros y Charlas</title>
+<meta name="description" content="Todo el contenido cristiano de Omar Cruz Padilla en un solo lugar: cuentos bíblicos en video «Consomé para el Alma», escuelas bíblicas online de la Academia del Profe Omar, sus libros y charlas para iglesias y eventos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --fondo:#0d2018; --fondo2:#123024; --panel:#173b2a; --panel2:#1d4632;
+  --oro:#e2ac4e; --oro2:#f2c877; --marfil:#f6efdd; --suave:#cfd8c8;
+  --terra:#d0734f; --linea:rgba(226,172,78,.35);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--fondo);color:var(--marfil);font-family:'Jost',sans-serif;line-height:1.55}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+
+/* MASTHEAD */
+header{border-bottom:1px solid var(--linea);background:linear-gradient(180deg,#0a1a12,#0d2018)}
+.mast{display:flex;align-items:center;gap:16px;padding:18px 0}
+.sello{width:62px;height:62px;border:2px solid var(--oro);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--oro);flex:none;background:radial-gradient(circle at 35% 30%,#1d4632,#0d2018)}
+.mast h1{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,4.5vw,38px);line-height:1.05;font-weight:700}
+.mast h1 span{color:var(--oro)}
+.mast p{color:var(--suave);font-size:14px;letter-spacing:.14em;text-transform:uppercase}
+nav{display:flex;gap:8px;flex-wrap:wrap;padding:0 0 16px}
+nav a{text-decoration:none;border:1px solid var(--linea);padding:8px 16px;border-radius:999px;font-size:15px;color:var(--marfil)}
+nav a:hover{background:var(--oro);color:#231603;border-color:var(--oro)}
+
+/* HERO */
+.hero{position:relative;border-bottom:1px solid var(--linea)}
+.hero img{width:100%;height:min(62vh,540px);object-fit:cover;object-position:center 30%}
+.hero .velo{position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,22,15,.88) 0%,rgba(9,22,15,.55) 55%,rgba(9,22,15,.15) 100%)}
+.hero .txt{position:absolute;inset:0;display:flex;align-items:center}
+.hero h2{font-family:'Cormorant Garamond',serif;font-size:clamp(34px,6.5vw,62px);line-height:1.02;font-weight:700;max-width:640px}
+.hero h2 em{color:var(--oro2);font-style:italic}
+.hero p{max-width:520px;color:#efe8d2;margin:16px 0 26px;font-size:clamp(16px,2.4vw,19px)}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:15px 30px;border-radius:10px;font-size:17px;margin:0 10px 10px 0}
+.btn-oro{background:var(--oro);color:#231603}
+.btn-borde{border:2px solid var(--oro);color:var(--oro2)}
+.btn-terra{background:var(--terra);color:#fff}
+.verso{background:var(--fondo2);border-bottom:1px solid var(--linea);text-align:center;padding:26px 20px}
+.verso p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(20px,3.4vw,28px);color:var(--oro2)}
+.verso small{display:block;margin-top:6px;letter-spacing:.2em;color:var(--suave);font-family:'Jost',sans-serif;font-style:normal}
+
+/* SECCIONES */
+section{padding:64px 0 8px}
+.kicker{color:var(--terra);letter-spacing:.28em;text-transform:uppercase;font-size:13px;font-weight:700}
+h3.tit{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,5vw,46px);line-height:1.05;margin:8px 0 10px}
+h3.tit span{color:var(--oro)}
+.sub{color:var(--suave);max-width:680px;font-size:17px;margin-bottom:34px}
+
+/* CUENTOS — índice de capítulos */
+.cuentos{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.cuento{background:var(--panel);border:1px solid var(--linea);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.cuento .foto{position:relative}
+.cuento .foto img{width:100%;height:180px;object-fit:cover}
+.cuento .num{position:absolute;top:10px;left:10px;background:rgba(9,22,15,.85);border:1px solid var(--oro);color:var(--oro2);font-family:'Cormorant Garamond',serif;font-weight:700;font-size:18px;padding:2px 12px;border-radius:999px}
+.cuento .play{position:absolute;right:12px;bottom:12px;width:46px;height:46px;border-radius:50%;background:var(--oro);color:#231603;display:flex;align-items:center;justify-content:center;font-size:19px;text-decoration:none}
+.cuento .cuerpo{padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.cuento h4{font-family:'Cormorant Garamond',serif;font-size:24px;line-height:1.1}
+.cuento p{color:var(--suave);font-size:15px;flex:1}
+.cuento a.ver{color:var(--oro2);font-weight:600;text-decoration:none}
+.canal-cta{margin:34px 0 10px;background:linear-gradient(120deg,var(--panel2),var(--panel));border:1px solid var(--linea);border-radius:14px;padding:26px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+.canal-cta p{font-family:'Cormorant Garamond',serif;font-size:24px;max-width:560px}
+
+/* ESCUELAS */
+.escuelas{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.escuela{background:var(--panel);border:1px solid var(--linea);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.escuela img{width:100%;height:210px;object-fit:cover;object-position:top}
+.escuela .cuerpo{padding:20px 22px 24px;display:flex;flex-direction:column;gap:9px;flex:1}
+.escuela h4{font-family:'Cormorant Garamond',serif;font-size:27px;line-height:1.08}
+.escuela p{color:var(--suave);font-size:15.5px;flex:1}
+.precio{font-size:30px;font-weight:700;color:var(--oro2)}
+.precio small{font-size:14px;color:var(--suave);font-weight:400}
+.etq{align-self:flex-start;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--oro);color:var(--oro2);padding:3px 12px;border-radius:999px}
+.etq.pronto{border-color:var(--terra);color:#f0a183}
+.nota{font-size:13px;color:#a9b8a4}
+.btn-comprar{background:var(--oro);color:#231603;text-align:center;text-decoration:none;font-weight:700;padding:14px;border-radius:10px;font-size:17px}
+.btn-pronto{background:transparent;border:2px dashed var(--terra);color:#f0a183;text-align:center;padding:12px;border-radius:10px;font-weight:600}
+
+/* LIBROS */
+.libros{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.libro{display:flex;gap:20px;background:var(--panel);border:1px solid var(--linea);border-radius:14px;padding:22px;align-items:flex-start}
+.libro img{width:128px;border-radius:6px;box-shadow:0 10px 24px rgba(0,0,0,.5);flex:none}
+.libro h4{font-family:'Cormorant Garamond',serif;font-size:26px;line-height:1.1;margin-bottom:8px}
+.libro p{color:var(--suave);font-size:15px;margin-bottom:16px}
+
+/* CHARLAS */
+.charlas{margin:64px 0 0;background:linear-gradient(120deg,#1d4632,#123024);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.charlas .grid{display:grid;grid-template-columns:300px 1fr;gap:34px;align-items:center;padding:44px 0}
+.charlas img{width:100%;height:340px;object-fit:cover;object-position:top;border-radius:14px;border:1px solid var(--linea)}
+.charlas h3{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,4.6vw,44px);line-height:1.05}
+.charlas h3 span{color:var(--oro)}
+.charlas p{color:#e7dfc8;margin:14px 0 24px;font-size:17px;max-width:560px}
+footer{padding:38px 0 46px;text-align:center;color:var(--suave);font-size:14.5px}
+footer .marca{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--marfil)}
+footer a{color:var(--oro2)}
+@media(max-width:760px){
+  .charlas .grid{grid-template-columns:1fr}
+  .charlas img{height:300px}
+  .libro{flex-direction:column}
+  .libro img{width:150px}
+  .hero img{height:70vh}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="mast">
+      <div class="sello">✝</div>
+      <div>
+        <h1>Consomé para el Alma <span>· Omar Cruz Padilla</span></h1>
+        <p>Ministerio · Academia Bíblica · Libros</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#cuentos">🎬 Cuentos</a>
+      <a href="#escuelas">📖 Escuelas Bíblicas</a>
+      <a href="#libros">📚 Libros</a>
+      <a href="#frases">✍️ Frases del Alma Club</a>
+      <a href="#charlas">🎤 Charlas</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <img src="img/hero.jpg" alt="Interior de una iglesia con vitrales — escena del cuento «El que servía en silencio»">
+  <div class="velo"></div>
+  <div class="txt">
+    <div class="wrap">
+      <h2>Historias que alimentan <em>el alma</em>, palabra que forma <em>ministros</em></h2>
+      <p>Todo el contenido cristiano de Omar Cruz Padilla en un solo lugar: cuentos en video, escuelas bíblicas online en español, sus libros y charlas para iglesias y eventos.</p>
+      <a class="btn btn-oro" href="#cuentos">Ver los cuentos</a>
+      <a class="btn btn-borde" href="#escuelas">Estudiar la Biblia</a>
+    </div>
+  </div>
+</div>
+
+<div class="verso">
+  <p>«Lámpara es a mis pies tu palabra, y lumbrera a mi camino.»</p>
+  <small>SALMO 119:105</small>
+</div>
+
+<section id="cuentos">
+  <div class="wrap">
+    <div class="kicker">Serie en video · YouTube</div>
+    <h3 class="tit">Cuentos <span>Consomé para el Alma</span></h3>
+    <p class="sub">Cuentos fotográficos construidos sobre las frases originales de Omar Cruz Padilla: historias de fe, familia y vida real que cierran con la frase y su tarjeta de autor. Nuevos cuentos en el canal <strong>@ConsomeParaElAlma</strong>.</p>
+
+    <div class="cuentos">
+      <article class="cuento">
+        <div class="foto"><img src="img/cuento-18.jpg" alt="Cuento 18: El que servía en silencio"><span class="num">Núm. 18</span><a class="play" href="https://youtu.be/1goda5lUsjE" target="_blank" rel="noopener" aria-label="Ver en YouTube">▶</a></div>
+        <div class="cuerpo"><h4>El que servía en silencio</h4><p>Postear tu relación con Dios no te hace más cristiano: servirle e imitar a Jesús en silencio es lo que realmente importa.</p><a class="ver" href="https://youtu.be/1goda5lUsjE" target="_blank" rel="noopener">Ver en YouTube →</a></div>
+      </article>
+      <article class="cuento">
+        <div class="foto"><img src="img/cuento-17.jpg" alt="Cuento 17: El hombre de las alcantarillas"><span class="num">Núm. 17</span><a class="play" href="https://youtu.be/s4YFEscY8A8" target="_blank" rel="noopener" aria-label="Ver en YouTube">▶</a></div>
+        <div class="cuerpo"><h4>El hombre de las alcantarillas</h4><p>Un cuento de la serie Consomé para el Alma, sobre una frase original de Omar Cruz Padilla.</p><a class="ver" href="https://youtu.be/s4YFEscY8A8" target="_blank" rel="noopener">Ver en YouTube →</a></div>
+      </article>
+      <article class="cuento">
+        <div class="foto"><img src="img/cuento-14.jpg" alt="Cuento 14: El hombre sin hilos"><span class="num">Núm. 14</span><a class="play" href="https://youtu.be/jIht9jXQKBE" target="_blank" rel="noopener" aria-label="Ver en YouTube">▶</a></div>
+        <div class="cuerpo"><h4>El hombre sin hilos</h4><p>Los hombres no se miden por lo que aparentan, sino cuando no son marionetas del mundo.</p><a class="ver" href="https://youtu.be/jIht9jXQKBE" target="_blank" rel="noopener">Ver en YouTube →</a></div>
+      </article>
+      <article class="cuento">
+        <div class="foto"><img src="img/cuento-13.jpg" alt="Cuento 13: Ocho horas de valor"><span class="num">Núm. 13</span><a class="play" href="https://youtu.be/eXAlnJ0VtfA" target="_blank" rel="noopener" aria-label="Ver en YouTube">▶</a></div>
+        <div class="cuerpo"><h4>Ocho horas de valor</h4><p>Un homenaje a la mujer: el verdadero sexo fuerte, contado en un cuento de la serie.</p><a class="ver" href="https://youtu.be/eXAlnJ0VtfA" target="_blank" rel="noopener">Ver en YouTube →</a></div>
+      </article>
+      <article class="cuento">
+        <div class="foto"><img src="img/cuento-12.jpg" alt="Cuento 12: La obra maestra"><span class="num">Núm. 12</span><a class="play" href="https://youtu.be/yggfDy67PxQ" target="_blank" rel="noopener" aria-label="Ver en YouTube">▶</a></div>
+        <div class="cuerpo"><h4>La obra maestra</h4><p>Dios creó al hombre primero como borrador… y de ahí salió su obra maestra. Un cuento con humor y verdad.</p><a class="ver" href="https://youtu.be/yggfDy67PxQ" target="_blank" rel="noopener">Ver en YouTube →</a></div>
+      </article>
+      <article class="cuento">
+        <div class="foto"><img src="img/cuento-11.jpg" alt="Cuento 11: El vecino difícil"><span class="num">Núm. 11</span><a class="play" href="https://youtu.be/l69IJcdct3k" target="_blank" rel="noopener" aria-label="Ver en YouTube">▶</a></div>
+        <div class="cuerpo"><h4>El vecino difícil</h4><p>Un cuento de la serie Consomé para el Alma, sobre una frase original de Omar Cruz Padilla.</p><a class="ver" href="https://youtu.be/l69IJcdct3k" target="_blank" rel="noopener">Ver en YouTube →</a></div>
+      </article>
+      <article class="cuento">
+        <div class="foto"><img src="img/cuento-8.jpg" alt="Cuento 8: El que calla también"><span class="num">Núm. 8</span><a class="play" href="https://youtu.be/CF13fYrhVP8" target="_blank" rel="noopener" aria-label="Ver en YouTube">▶</a></div>
+        <div class="cuerpo"><h4>El que calla también</h4><p>Un cuento de la serie Consomé para el Alma, sobre una frase original de Omar Cruz Padilla.</p><a class="ver" href="https://youtu.be/CF13fYrhVP8" target="_blank" rel="noopener">Ver en YouTube →</a></div>
+      </article>
+    </div>
+
+    <div class="canal-cta">
+      <p>📺 El canal completo: oraciones, historias bíblicas y un cuento nuevo tras otro.</p>
+      <a class="btn btn-oro" href="https://youtube.com/@ConsomeParaElAlma" target="_blank" rel="noopener">Ir al canal de YouTube</a>
+    </div>
+  </div>
+</section>
+
+<section id="escuelas">
+  <div class="wrap">
+    <div class="kicker">Academia del Profe Omar · 100% online en español</div>
+    <h3 class="tit">Escuelas <span>Bíblicas</span></h3>
+    <p class="sub">Formación bíblica grabada, con narración profesional, a tu ritmo y para siempre: sin clases en vivo ni mensualidades. Al completar tu escuela y su proyecto final recibes tu certificado privado de culminación de la Academia, firmado por el director.</p>
+
+    <div class="escuelas">
+      <article class="escuela">
+        <img src="img/escuela-predicacion.jpg" alt="Diplomado en Predicación Bíblica">
+        <div class="cuerpo">
+          <span class="etq">✅ Vendiendo</span>
+          <h4>Diplomado en Predicación Bíblica</h4>
+          <p>Homilética completa en video: 31 lecciones, del texto al púlpito, con proyecto final y diploma. Aprende a preparar y predicar mensajes fieles y claros.</p>
+          <div class="precio">$139 <small>USD · pago único</small></div>
+          <a class="btn-comprar" href="https://payhip.com/b/ktDOU" target="_blank" rel="noopener">Inscribirme ahora</a>
+          <p class="nota">Certificado privado de culminación de la Academia del Profe Omar. No es una licencia estatal ni una ordenación ministerial.</p>
+        </div>
+      </article>
+      <article class="escuela">
+        <img src="img/escuela-consejeria.jpg" alt="Certificación en Consejería Bíblica">
+        <div class="cuerpo">
+          <span class="etq">✅ Vendiendo</span>
+          <h4>Certificación en Consejería Bíblica</h4>
+          <p>41 lecciones en video + proyecto final: acompaña, escucha y aconseja desde la Palabra, con fundamento bíblico y herramientas prácticas para el ministerio.</p>
+          <div class="precio">$299 <small>USD · pago único</small></div>
+          <a class="btn-comprar" href="https://payhip.com/b/nr2eN" target="_blank" rel="noopener">Inscribirme ahora</a>
+          <p class="nota">Certificado privado de culminación de la Academia del Profe Omar. No es una licencia estatal ni una ordenación ministerial.</p>
+        </div>
+      </article>
+      <article class="escuela">
+        <img src="img/escuela-adoracion.jpg" alt="Escuela de Adoración y Alabanza">
+        <div class="cuerpo">
+          <span class="etq pronto">🕐 Muy pronto</span>
+          <h4>Escuela de Adoración y Alabanza</h4>
+          <p>35 lecciones ya producidas para ministros de alabanza y equipos de adoración. La inscripción abre muy pronto.</p>
+          <div class="precio">$199 <small>USD · pago único</small></div>
+          <div class="btn-pronto">Inscripción muy pronto</div>
+        </div>
+      </article>
+      <article class="escuela">
+        <div class="cuerpo" style="padding-top:26px">
+          <span class="etq pronto">🕐 Muy pronto</span>
+          <h4>Escuela de Capellanía</h4>
+          <p>Formación para servir como capellán voluntario en hospitales, cárceles, hospicios y comunidad: presencia, escucha y palabra de consuelo en los momentos más difíciles. En producción.</p>
+          <div class="precio">$199 <small>USD · pago único</small></div>
+          <div class="btn-pronto">Inscripción muy pronto</div>
+          <p class="nota">La Academia vende formación y preparación; la credencial oficial de cada institución es un trámite aparte de cada entidad.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="libros">
+  <div class="wrap">
+    <div class="kicker">Librería · Amazon</div>
+    <h3 class="tit">Los libros de <span>Omar Cruz Padilla</span></h3>
+    <p class="sub">Frases originales y reflexiones sin anestesia: los libros de donde nacen los cuentos y las frases diarias.</p>
+    <div class="libros">
+      <article class="libro">
+        <img src="img/libro-frases.jpg" alt="Portada de «Frases para el alma: realistas y amargadas»">
+        <div>
+          <h4>Frases para el alma: realistas y amargadas</h4>
+          <p>Las frases originales de Omar Cruz Padilla: directas, reales y con la amargura justa para despertar. El libro oficial de la página Frases del Alma Club.</p>
+          <a class="btn btn-oro" href="https://a.co/d/06L3nwvR" target="_blank" rel="noopener">Comprar en Amazon</a>
+        </div>
+      </article>
+      <article class="libro">
+        <img src="img/libro-poder.jpg" alt="Portada de «El poder de no auto joderse»">
+        <div>
+          <h4>El poder de no auto joderse</h4>
+          <p>Un llamado claro a dejar de sabotearte: decisiones, hábitos y fe práctica para salir del ciclo de autoengaño.</p>
+          <a class="btn btn-oro" href="https://a.co/d/098e8xuL" target="_blank" rel="noopener">Comprar en Amazon</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="frases">
+  <div class="wrap">
+    <div class="kicker">Comunidad diaria · Facebook</div>
+    <h3 class="tit">Frases del <span>Alma Club</span></h3>
+    <p class="sub">La página oficial del libro «Frases para el alma»: cada día una frase original de Omar Cruz Padilla con su sello — en póster, video largo y video corto — para leer, guardar y compartir.</p>
+    <a class="btn btn-oro" href="https://www.facebook.com/profile.php?id=713322848740349" target="_blank" rel="noopener">Seguir la página en Facebook</a>
+  </div>
+</section>
+
+<div class="charlas" id="charlas">
+  <div class="wrap">
+    <div class="grid">
+      <img src="img/omar.jpg" alt="Omar Cruz Padilla">
+      <div>
+        <div class="kicker">Invítalo a tu iglesia o evento</div>
+        <h3>Charlas y <span>presentaciones</span></h3>
+        <p>Omar Cruz Padilla está disponible para charlas y presentaciones en <strong>iglesias, eventos, librerías y donde sea</strong>: predicación, motivación desde la fe y presentación de sus libros, siempre en español.</p>
+        <a class="btn btn-terra" href="https://wa.me/12406590154" target="_blank" rel="noopener">📲 Escríbeme por WhatsApp: 240-659-0154</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p class="marca">Consomé para el Alma · Omar Cruz Padilla</p>
+    <p>Academia del Profe Omar · Maryland, EE. UU.<br>
+    Cuentos: <a href="https://youtube.com/@ConsomeParaElAlma" target="_blank" rel="noopener">youtube.com/@ConsomeParaElAlma</a> · Frases diarias: <a href="https://www.facebook.com/profile.php?id=713322848740349" target="_blank" rel="noopener">Frases del Alma Club</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
